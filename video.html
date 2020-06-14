@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cssStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <script src="./firebaseConfig.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="video.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="flip-master/src/flip.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="barraNavegacion">
+            <input type="checkbox" id="check"/>
+            <label for="check" class="checkbtn">
+                <i id="bars" class="fa-fa-bars"></i>
+            </label>
+            
+                <span id="usuario2" class="usuario"></span>
+            <a href="cumplePilar.html">¿Qué edad?</a>
+            <a href="fotos.html">Nuestros mensajes</a>
+            <a href="video.html">Videos</a>
+            <a onclick="mensajeComentario()">Comentarios</a>  <!-- href="comentarios.html" -->
+            <a onclick="salir()">Salir</a>
+            
+            
+        </nav>
+        <div class="nosotros"><img src="./img/cabeceraVideo.jpg" class="imagenPrincipal" ></div>
+        <div class="mensajeNosotros"><div id="tituloPrincipal" class="tituloPrincipal">PEQUEÑO ALMACÉN DE FELICITACIONES</div></div>
+
+        <div id="divVideos" class="divImagenes"></div>
+        
+        
+        <footer>Con<span style="color: red;">&hearts;</span> de tus amig@s</footer>
+
+    </div>
+    
+</body>
+</html>

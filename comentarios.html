@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cssStyle.css">
+    <script src="./firebaseConfig.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="comentarios.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="flip-master/src/flip.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="barraNavegacion">
+            <span id="usuario2" class="usuario"></span>
+            <a href="cumplePilar.html">¿Qué edad?</a>
+            <a href="fotos.html">Nuestros mensajes</a>
+            <a href="video.html">Videos</a>
+            <a onclick="mensajeComentario()">Comentarios</a>  <!-- href="comentarios.html" -->
+            <a onclick="salir()">Salir</a>
+        </nav>
+        <div class="nosotros"><img src="./img/infinitoDiscreto.png" class="imagenPrincipal" ></div>
+        <div class="mensajeNosotros"><div id="tituloPrincipal" class="tituloPrincipal">COMENTARIOS</div></div>
+
+        <form>
+            <textarea id="comentario"></textarea>
+            <input type="button" value="enviar" onclick="annadirComentario()"/>
+        </form>
+        <div id="divComentarios"></div>
+        
+        <footer>Con<span style="color: red;">&hearts;</span> de tus amig@s</footer>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./firebaseConfig.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="./cumplePilar.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssStyle.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="barraNavegacion">
+            <span id="usuario" class="usuario"></span>
+            <a href="cumplePilar.html">¿Qué edad?</a>
+            <a href="fotos.html">Nuestros mensajes</a>
+            <a href="video.html">Videos</a>
+            <a onclick="mensajeComentario()">Comentarios</a>  <!-- href="comentarios.html" -->
+            <a onclick="salir()">Salir</a>
+        </nav>
+        <!-- <header class="nosotros">
+            <div class="mensajeNosotros"><div id="tituloPrincipal" class="tituloPrincipal">FELICIDADES</div></div>
+            
+        </header> -->
+        
+        <div class="nosotros"><img src="./img/grupo3.jpg" class="imagenPrincipal" ></div>
+        <div class="mensajeNosotros"><div id="tituloPrincipal" class="tituloPrincipal">FELICIDADES</div></div>
+        <div id="soyMayor" class="soyMayor">
+            ¿SOY YA MUY MAYOR?
+            
+        </div>
+    
+        <form id="formulario" class="formulario">
+            <table>
+            <tr>
+                <td><label for="nombre">Introduzca su nombre</label></td>
+                <td colspan="2"><input type="text" id="name" class="caja" required="required"/></td>
+            </tr>
+            <tr>
+                <td><label for="apellido">Introduzca su apellido</label></td>
+                <td colspan="2"> <input type="text" id="apellido" class="caja"/></td>
+            </tr>
+            <tr>
+                <td><label for="edad">Y su edad es</label></td>
+                <td><input type="password" id="edad" class="caja" required="required"/></td>
+                <td><img id="ojo" class="ojo" src="img/ojo.png" onclick="verEdad()"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="button" id="darMensaje" class="darMensaje" value="JOPE,¿QUÉ ME DIRÁ?" onclick="daMensaje()"/></td>
+            </tr>
+        </table>
+            <!-- <div class="divFormulario">
+                <label for="nombre">Introduzca su nombre</label>
+                <input type="text" id="name" class="caja" required="required"/>
+            </div>
+            <div class="divFormulario">
+                <label for="apellido">Introduzca su apellido</label>
+                <input type="text" id="apellido" class="caja"/>
+            </div>
+            <div class="divFormulario">
+                <label for="edad">Y su edad es</label>
+                <input type="password" id="edad" class="caja" required="required"/>
+                <img id="ojo" class="ojo" src="img/ojo.png" onclick="verEdad()">
+            </div>
+         <input type="button" id="darMensaje" class="darMensaje" value="JOPE,¿QUÉ ME DIRÁ?" onclick="daMensaje()"/> -->
+        </form>
+        <div class="resultadoYPunno">
+            <div id="resultado" class="resultado">
+            </div>
+            <img id="fotoPunno"/>
+        </div>
+        <div id="botonSilenciar">
+    
+        </div>
+        
+        <footer>Con <span style="color: red;">&hearts; </span>de tus amig@s</footer>
+    
+        <div id="audio">
+            <iframe src="" id="iframe"></iframe>
+        </div>
+    </div>
+  
+        
+   
+    
+    
+    
+</body>
+
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./firebaseConfig.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+    <script src="./login.js"></script>
+    <link rel="stylesheet" type="text/css" href="cssStyle.css">
+
+</head>
+<body id="bodyLogin" class="bodyLogin">
+
+         <form class="formularioRegLog">
+             <table class="tablaRegLog">
+                 <tr class="trLogin">
+                     <td colspan="2">LOGIN</td>
+                 </tr>
+                 <tr>
+                     <td class="tdLabel"><label for="email">Usuario</label></td>
+                     <td class="tdInput"><input type="email" id="email" class="classInput" required="required"/></td>
+                 </tr>
+                 <tr>
+                     <td class="tdLabel"><label for="password">Contraseña</label></td>
+                     <td class="tdInput"><input type="password" id="password" class="classInput" required="required"/></td>
+                 </tr>
+                 <tr>
+                     <td colspan="2"><input type="button" id="botonLogin" class="botonLogin" value="ENTRAR" onclick="validar()"/></td>
+                 </tr>
+              
+             </table>
+             <div id="divRespuesta"></div>
+             <p class="alt-form">Volver a registro <a href="./index.html">Ingresa aquí</a></p>
+         </form>
+    
+
+    
+</body>
+</html>

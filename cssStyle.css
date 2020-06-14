@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* CSS index */
+
+.bodyLogin {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.formularioRegLog {
+  width: 60%;
+}
+.tablaRegLog {
+  width: 100%;
+  border: solid 2px rgba(51, 199, 255, 1);
+  padding: 10px;
+  border-spacing: 0 3vh;
+}
+.trLogin {
+  text-align: center;
+}
+.tdInput {
+  width: 20vw;
+  /* margin-left: 5vw; */
+}
+.tdLabel {
+  width: 40%;
+}
+.classInput {
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+.botonLogin {
+  background-color: rgba(51, 199, 255, 1);
+    width: 100%;
+    height: 3vw;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.alt-form {
+  text-align: center;
+  margin-top: 3%;
+}
+
+/* CSS cumplePilar */
+img {
+  max-width: 100%;
+  height: 100%;
+}
+.imagenPrincipal {
+  width: 1920px;
+}
+
+.barraNavegacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(51, 150, 255);
+  height: 4vh;
+}
+.barraNavegacion a {
+  color: white;
+  margin-right: 2%;
+}
+.usuario {
+  margin: auto 0px;
+  color: white;
+  position: absolute;
+  left: 0;
+  padding-left: 2%;
+}
+.nosotros {
+  /* background-image: url("./img/grupo3.jpg");
+  background-repeat: no-repeat; */
+  width: 100%;
+  max-width: 100%;
+  /*  height: 50vh;  */
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+}
+.mensajeNosotros {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  height: 40%;
+  background-color: rgb(51, 150, 255);
+  padding: 0 3%;
+  color: white;
+}
+.soyMayor {
+  width: 40%;
+  height: 4vh;
+  margin: 3vh auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.divFormulario {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.darMensaje {
+  background-color: rgba(51, 199, 255, 1);
+  width: 100%;
+  height: 3vw;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.caja {
+  width: 100%;
+  border: 0px;
+  border-bottom: solid 1px black;
+  text-align: center;
+}
+.resultadoYPunno {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.resultado {
+  font-size: 20px;
+}
+#fotoPunno {
+  width: 25%;
+}
+#audio {
+  display: none;
+}
+#botonSilenciar {
+  height: 4vh;
+}
+
+/* CSS fotos */
+
+.divImagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.msj {
+  overflow: auto;
+
+  width: 80%;
+  margin: 3vh auto;
+  font-size: 30px;
+  text-align: center;
+}
+.fotosNuestras {
+  margin-bottom: 4%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* .fotosNuestras:active{
+  
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+   -webkit-animation: flash linear 0.20s;
+  animation: flash linear 0.20s; 
+
+}  */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  background-color: rgb(51, 150, 255);
+  color: white;
+  font-size: 30px;
+}
+
+/* Videos */
+#divVideos{
+  margin-top: 3vh;
+}
+.videos{
+  margin-bottom: 3%;
+}
+
+/* Checkbox */
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width: 375px) {
+  #wrapper {
+    min-height: 100vh;
+    position: relative;
+  }
+  .botonLogin{
+    height: 3vh;
+  }
+  .nosotros {
+    height: 26vh;
+  }
+  .mensajeNosotros {
+    font-size: 15px;
+  }
+  .soyMayor {
+    font-size: 7px;
+    text-align: center;
+    margin: 6vh auto;
+  }
+  .barraNavegacion a {
+    font-size: 10px;
+  }
+  .usuario {
+    font-size: 8px;
+  }
+  .tituloPrincipal {
+    font-size: 11px;
+    text-align: center;
+  }
+  .darMensaje {
+    height: 4vh;
+    font-size: 7px;
+  }
+  .formulario {
+    font-size: 10px;
+  }
+  .resultado {
+    font-size: 11px;
+  }
+  #botonSilenciar {
+    height: 2vh;
+  }
+  footer {
+    font-size: 20px;
+    height: 4vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .msj {
+    font-size: 12px;
+  }
+  .ojo {
+    width: 100%;
+  }
+  .fotosNuestras {
+    width: 40%;
+  }
+  .divImagenes {
+    margin-bottom: 2vh;
+  }
+  .videos{
+    width: 40%;
+  }
+
+  .checkbtn{
+    display: block;
+  }
+}
